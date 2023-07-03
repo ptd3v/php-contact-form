@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Form</title>
+    <title>PHP Contact Form</title>
 </head>
+<!-- Start Body -->
 <body>
-//Insert Content here tomorrow, take a nap
+    <h2>PHP Contact Form</h2>
+    <!-- Call the PHP files POST method-->
+    <form action="process.php" method="post">
+        <!-- Name field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <!-- Email field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Message field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
 </body>
+<!-- End body -->
 </html>
